@@ -1,6 +1,7 @@
 body{
 height: 100%;
 width: 98%;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 z-index: 1;
 background: linear-gradient(270deg, #333, #1f82c9);
 background-size: 400% 400%;
@@ -17,7 +18,7 @@ animation: background 60s ease infinite;
 
 header{
     height: 10%;
-    width: 100%;
+    width: 100%;  
 }
 
 main{
@@ -168,3 +169,25 @@ footer{
         transform: translateY(-1080px) rotate(630deg)
     }
 }
+.overmijtitel{
+    color: white;
+    text-align: center;
+}
+.overmijtekst{
+
+    color: white;
+    text-align: left;
+}
+#beschrijf{
+    height: 400px;
+    width: 500px;
+}
+.imgom{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    widows: 100px;
+}
+.imgom > img {
+    line-height: 75px;
+  }
