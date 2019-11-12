@@ -1,12 +1,13 @@
 body{
-height: 100%;
-width: 98%;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-z-index: 1;
-background: linear-gradient(270deg, #333, #1f82c9);
-background-size: 400% 400%;
+    height: 100%;
+    width: 98%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(270deg, #333, #1f82c9, #1f38c9);
+    background-size: 300% 300%;
 
-animation: background 60s ease infinite;
+    animation: background 20s ease infinite;
 }
 
 @keyframes background {
@@ -27,9 +28,9 @@ main{
 }
 
 footer{
-    height: 10%;
     width: 100%;
 }
+
 #navbar {
   list-style-type: none;
   margin: 0;
@@ -38,8 +39,15 @@ footer{
   background-color: #333;
 }
 
+h1{
+    color: white;
+    text-align: center;
+}
+
+
 .blok {
-  float: left;
+  display: inline-block;
+  text-align: left; 
   border-right:1px solid #bbb;
 }
 
@@ -59,17 +67,12 @@ footer{
   background-color: #111;
 }
 
-#githubfooter{
-    height: 100px;
-    width: 100px;
-}
-
 .bubbles{
     position: absolute;
-    top: 0;
+    top: 489px;
     left: 0;
     width: 97%;
-    height: 100%;
+    height: 80%;
     z-index: -1;
     transform: translateZ(0);
 }
@@ -93,7 +96,7 @@ footer{
 .bubbles li:nth-child(2){
     width: 60px;
     height: 60px;
-    left: 40%;
+    left: 30%;
     animation-delay: 2s;
     animation-duration: 17s;
 }
@@ -133,7 +136,7 @@ footer{
 .bubbles li:nth-child(7){
     width: 60px;
     height: 60px;
-    left: 30%;
+    left: 10%;
     animation-delay: 10s;
     animation-duration: 24s;
 }
@@ -141,7 +144,7 @@ footer{
 .bubbles li:nth-child(8){
     width: 75px;
     height: 75px;
-    left: 45%;
+    left: 65%;
     animation-delay: 19s;
     animation-duration: 14s;
 }
@@ -149,7 +152,7 @@ footer{
 .bubbles li:nth-child(9){
     width: 25px;
     height: 25px;
-    left: 67%;
+    left: 95%;
     animation-delay: 20s;
     animation-duration: 12s;
 }
@@ -161,6 +164,7 @@ footer{
     animation-delay: 14s;
     animation-duration: 6s;
 }
+
 @keyframes square{
     0% {
         transform: translateY(o);
@@ -169,25 +173,3 @@ footer{
         transform: translateY(-1080px) rotate(630deg)
     }
 }
-.overmijtitel{
-    color: white;
-    text-align: center;
-}
-.overmijtekst{
-
-    color: white;
-    text-align: left;
-}
-#beschrijf{
-    height: 400px;
-    width: 500px;
-}
-.imgom{
-    display: flex;
-    justify-content: center;
-    height: 100px;
-    widows: 100px;
-}
-.imgom > img {
-    line-height: 75px;
-  }
